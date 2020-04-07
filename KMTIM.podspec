@@ -23,7 +23,13 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/zhenlove/KMTIM'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+#  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.license      = { :type => 'Proprietary',
+  :text => <<-LICENSE
+#    copyright 2017 tencent Ltd. All rights reserved.
+    针对TIM封装
+  LICENSE
+ }
   s.author           = { 'zhenlove' => '121910347@qq.com' }
 
   s.ios.deployment_target = '8.0'
