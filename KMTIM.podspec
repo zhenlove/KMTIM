@@ -25,18 +25,20 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhenlove' => '121910347@qq.com' }
-  s.source           = { :git => 'https://github.com/zhenlove/KMTIM.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'KMTIM/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'KMTIM' => ['KMTIM/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64', }
+  s.libraries    = 'stdc++'
+  s.dependency 'MMLayout','0.2.0'
+  s.dependency 'SDWebImage'
+  s.dependency 'TXIMSDK_iOS'
+  s.dependency 'ReactiveObjC','3.1.1'
+  s.dependency 'Toast','4.0.0'
+  s.dependency 'ISVImageScrollView','0.1.2'
+  s.requires_arc = true
+  s.source = { :http => 'https://imsdk-1252463788.cos.ap-guangzhou.myqcloud.com/4.6.100/TIM_SDK_TUIKIT_iOS_latest_framework.zip'}
+  s.source_files = '**/TUIKit/Classes/**/*.{h,m,mm}'
+  s.private_header_files = '**/TUIKit/Classes/third/**/*.{h}'
+  s.vendored_libraries = ['**/TUIKit/Classes/third/voiceConvert/opencore-amrnb/libopencore-amrnb.a', '**/TUIKit/Classes/third/voiceConvert/opencore-amrwb/libopencore-amrwb.a']
+  s.resource = ['**/TUIKit/Resources/TUIKitFace.bundle','**/TUIKit/Resources/TUIKitResource.bundle']
 end
