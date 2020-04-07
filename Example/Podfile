@@ -1,0 +1,6 @@
+use_frameworks!
+target 'KMTIM_Tests' do
+  pod 'KMTIM', :path => '../'
+  
+  
+end
