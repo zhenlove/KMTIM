@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KMTIM'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of KMTIM.'
 
 # This description is used to generate tags and improve search results.
@@ -31,9 +31,11 @@ s.license      = { :type => 'Proprietary',
   LICENSE
  }
   s.author           = { 'zhenlove' => '121910347@qq.com' }
-
+  s.module_name = 'TXIMSDK_TUIKit_iOS' #在生成framework时,重新定义库名
+  s.static_framework = true #因为包含静态库
+  s.pod_target_xcconfig = {'DEFINES_MODULE' => 'YES'} #自动生成swift可以引用的图文件
   s.ios.deployment_target = '8.0'
-  s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64', }
+  s.xcconfig     = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
   s.libraries    = 'stdc++'
   s.dependency 'MMLayout','0.2.0'
   s.dependency 'SDWebImage'
