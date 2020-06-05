@@ -1,6 +1,6 @@
 # KMTIM
 
-[![CI Status](https://img.shields.io/travis/zhenlove/KMTIM.svg?style=flat)](https://travis-ci.org/zhenlove/KMTIM)
+[![Build Status](https://travis-ci.com/zhenlove/KMTIM.svg?branch=master)](https://travis-ci.com/zhenlove/KMTIM)
 [![Version](https://img.shields.io/cocoapods/v/KMTIM.svg?style=flat)](https://cocoapods.org/pods/KMTIM)
 [![License](https://img.shields.io/cocoapods/l/KMTIM.svg?style=flat)](https://cocoapods.org/pods/KMTIM)
 [![Platform](https://img.shields.io/cocoapods/p/KMTIM.svg?style=flat)](https://cocoapods.org/pods/KMTIM)
